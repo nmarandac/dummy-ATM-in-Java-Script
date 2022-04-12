@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<title>
+    ATM Program
+</title>
+<body> 
+   
+       <table> > <tr>
+        <td> Username </td>
+            <td><input type= "textbox" id="userName">  </td>
+           </tr>
+           <tr>
+            <td > Password </td> 
+           <td >  <input type= "password" id="userPassword"> </td> 
+           </tr>
+           <tr>
+             <td><button onclick= Login('userName','userPassword');  > Login </button></td>  
+             <td><button onclick= Logout();  > Logout </button></td> 
+           </tr>
+           </table>
+           <br>
+           <h2> Client information</h2>
+           <table>     <tr>
+            <td > Client: </td> 
+           <td id="client"></td> 
+           </tr> </table>
+
+           <h2> Account information</h2>
+           <table>     <tr>
+           <td> Account Number : </td>
+            <td><input type= "textbox"  id="AccountNo"> </td>
+            <tr>
+              <td><button onclick= GetBalance('AccountNo');  > Get Balance </button></td> 
+               </tr>
+           </table>
+
+
+           <table border="2">     
+          <tr>
+           
+            <td > Account No.:  </td>
+           <td id="accountNo"></td> 
+           </tr>
+
+           <td > Account Type:  </td>
+           <td id="account"></td> 
+           </tr>     
+           
+           <td > Balance ($): </td>
+           <td id="balance"></td> 
+           </tr>
+
+         </table>
+
+         <br>
+         
+         <h3> Operations </h3>
+
+         <table border= "1" > <tr>
+
+           <td > Deposit amount $  </td> 
+               <td >  <input type= "number" id="depAmount"> </td> 
+               </tr>
+               <tr>
+                 <td><button onclick= makeDeposit();  > Make deposit </button></td>  
+               </tr>
+               </table>
+
+        <br>
+
+         <table border= "1" > <tr>
+              <td > Withdraw amount $  </td> 
+               <td >  <input type= "number" id="WitAmount"> </td> 
+               </tr>
+               <tr>
+                 <td><button onclick= makeWithdraw();  > Make Withdraw </button></td>  
+               </tr>
+               </table>
+        <br>
+               <table border= "1" > <tr>
+                <td > Transfer amount $  </td> 
+                 <td >  <input type= "number" id="TransfAmount"> </td> 
+                 </tr>
+                 <td > To Account number:  </td> 
+                 <td >  <input type= "textbox" id="ToAccountNo"> </td> 
+                 </tr>
+                 <tr>
+                   <td><button onclick= makeTransfer();  > Make Transfer </button></td>  
+                 </tr>
+                 </table>
+             
+    <script src="ATM2.js"></script>
+    <script src="ATMAccount2.js"></script>
+</body>
+
+</head>
